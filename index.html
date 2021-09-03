@@ -1,0 +1,985 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <style>
+        ul li a {
+            color: black !important;
+            font-size: 11px;
+        }
+
+        .navbar {
+            font-weight: 300;
+            -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0) !important;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+
+        .bacc {
+            background-image: url('img/Group164.png');
+            height: 150% !important;
+            margin-top: 2%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .carous {
+            margin-top: 12%;
+            /*margin-bottom: 15%;*/
+            margin-left: 7%;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #193F99;
+        }
+
+        h4 {
+            font-weight: bold;
+            color: #193F99;
+        }
+
+        p {
+            font-size: 15px;
+            color: white;
+        }
+
+        button {
+            color: white !important;
+            font-size: 10px;
+            width: 100px;
+            height: 30px;
+        }
+
+        .bluee {
+            background-image: url('img/Path 431.png');
+            height: 150% !important;
+            margin-top: 2%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bages {
+            background-image: url('img/Rectangle 63.png');
+            height: 80% !important;
+            margin-top: 2%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .circ {
+            background-image: url('img/Ellipse 34.png');
+            /*margin-top: -50px;
+            margin-bottom: -50px;
+            height: 100% !important;*/
+            /*width:100% !important;*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div label {
+            color: white !important;
+            font-size: 15px;
+        }
+
+        .md-form {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .card {
+            box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0 rgba(0,0,0,0)
+        }
+
+        .owl-carousel .owl-theme div .item img {
+            margin-left: 50px;
+        }
+
+        footer {
+            background-color: #4D4D4D;
+            padding-bottom: 1%;
+        }
+
+        .texx {
+            color: white;
+            text-align: start;
+        }
+
+        element.style {
+        }
+
+        .owl-carousel {
+            display: block;
+        }
+
+        /**, ::after, ::before {
+            box-sizing:content-box;
+        }*/
+
+        .navbar .nav-item .nav-link .fas, .navbar .nav-item .nav-link .fab, .navbar .nav-item .nav-link .far {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .card:hover {
+            border: 1px solid #193F99;
+        }
+
+        .item img:hover {
+            /*box-shadow: 1px 1px 1px #193F99;*/
+            border-radius: 50%;
+            transform: scale(0.9);
+        }
+
+        .send:hover {
+            transform: scale(0.9);
+            color: black !important;
+            background-color: white !important;
+        }
+
+        .se:hover {
+            transform: scale(0.8);
+            color: black !important;
+            /*background-color: b !important;*/
+        }
+
+        .more:hover {
+            transform: scale(0.9);
+            color: white !important;
+            background-color: #FBB03B !important;
+        }
+
+        .more:active {
+            color: white !important;
+            background-color: #FBB03B !important;
+        }
+
+        .fform .md-form label {
+            font-size: 12px;
+        }
+
+        .logo:hover {
+            transform: scale(0.9);
+            /*color: white !important;
+            background-color: #FBB03B !important;*/
+        }
+
+        .nav-link:hover {
+            border-bottom: 2px solid #FBB03B;
+        }
+
+        .about:hover {
+            /*transform: scale(1.1);*/
+            /*color: white !important;*/
+            border: 1px solid #193F99 !important;
+        }
+
+        /*.wow {
+            opacity: 0;
+            /*transition: all 0.5s 0.5s ease-out;*/
+        /*display: inline-block;*/
+        /*margin: 0 0.5rem;
+            animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        /*animation-duration: 1s;
+        }*/ /***/ /*/
+
+        /*.animated {
+            opacity: 1;
+        }*/
+
+        input[type=text], select {
+            width: 100%;
+            /*padding: 12px 20px;*/
+            margin: 8px 0;
+            display: inline-block;
+            color: white;
+            background-color: transparent;
+            /*border: 1px solid #ccc;
+
+            border-radius: 4px;*/
+            /*box-sizing: border-box;*/
+        }
+
+
+        .select-wrapper input.select-dropdown {
+            position: relative;
+            z-index: 2;
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 0;
+            margin: 0 0 .94rem 0;
+            font-size: 1rem;
+            line-height: 2.9rem;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #ced4da;
+            outline: 0;
+        }
+
+        select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper span.caret {
+            position: absolute;
+            top: 5.8rem;
+            right: 28px;
+            font-size: .63rem;
+            color: #495057;
+        }
+
+        select.mdb-select.initialized {
+            display: none !important;
+        }
+
+        /*.form-control {
+            display: block;
+          
+             font-weight: 0; 
+             line-height: 0; 
+             color: white; 
+             background-color: transparent; 
+             background-clip: padding-box; 
+             border: 1px solid #ced4da; 
+             border-radius: 0; 
+           
+            border: 0;
+            border-bottom: 1px solid;
+        }*/
+
+        .form-group .form-control option{
+            color:black !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark " style="margin-top:1%; margin-bottom:2%;">
+            <a class="navbar-brand" href="index.html" style="">
+                <img src="img/Group36.png" class="img-fluid logo" style="width:80% ; height:80%;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color:#193F99 !important; border-radius:10px;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About OSSGG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Global Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DnA Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OSSGG new & Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  nav-flex-icons" style="">
+                    <li class="nav-item" style="background-color:#FBB03B !important; border-radius:5px; ">
+                        <a class="nav-link se" href="#" style="color:white !important;" >OSSGG PROFILE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect ">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect ">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect ">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect ">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect ">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container bacc">
+        <div class="row">
+            <div class="col-md-6 carous">
+                <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+                    <ol class="carousel-indicators" style="margin-left:-70%;">
+                        <li data-target="#carousel-example-1z" data-slide-to="0" style=" background-color:#193F99 !important;" class="active"></li>
+                        <li data-target="#carousel-example-1z" style=" background-color:#193F99 !important;" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-1z" style=" background-color:#193F99 !important;" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-1z" style=" background-color:#193F99 !important;" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active ">
+                            <h2>Big Tittle</h2>
+                            <p style=" width:80%;">
+                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                            </p>
+                            <button style="background-color:#193F99; margin-bottom:30% !important; box-shadow:none; border-color:#193F99;" class="send">learn more</button>
+                            <button style="background-color:#FFD922; margin-bottom:30% !important; box-shadow:none; border-color:#FFD922; " class="send">Contact us</button>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h2>Big Tittle</h2>
+                            <p style="width:80%;">
+                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                            </p>
+                            <button style="background-color:#193F99; margin-bottom:30% !important;" class="send">learn more</button>
+                            <button style="background-color:#FFD922; margin-bottom:30% !important;" class="send">Contact us</button>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h2>Big Tittle</h2>
+                            <p style="width:80%;">
+                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                            </p>
+                            <button style="background-color:#193F99;  margin-bottom:30% !important;" class="send">learn more</button>
+                            <button style="background-color:#FFD922;  margin-bottom:30% !important;" class="send">Contact us</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h2>Big Tittle</h2>
+                            <p style="width:80%;">
+                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                            </p>
+                            <button style="background-color:#193F99;  margin-bottom:30% !important; " class="send">learn more</button>
+                            <button style="background-color:#FFD922;  margin-bottom:30% !important;" class="send">Contact us</button>
+                        </div>
+                    </div>
+
+                    <!--<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev" style="margin-left:-1%;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>-->
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container" style="margin-top:5%;">
+        <div class="row">
+            <div class="col-md-12 left mb-3">
+                <img src="img/Group107.png" class="img-fluid" style="width:20%;" />
+            </div>
+            <div class="col-md-12">
+                <p style="color:black !important;" class="wow zoomIn">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:2%;">
+            <div class="col-md-6 flex-center ">
+                <div class="row p-3 m-1 about wow zoomIn" data-wow-offset="10"   data-wow-iteration="1" style="border:1px solid #808080; border-radius:5px;  ">
+                    <div class="col-md-3 col-sm-12 " style="margin-right:auto; margin-left:auto; display:block; margin:auto;">
+                        <img src="img/eye.png" class="img-fluid" style="width:80%; height:80%;" />
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <h4>Our Vision</h4>
+                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 flex-center ">
+                <div class="row p-3 m-1 about wow zoomIn" data-wow-offset="10"  data-wow-iteration="1" style="border:1px solid #808080; border-radius:5px;   ">
+                    <div class="col-md-3" style="display:block; margin:auto;">
+                        <img src="img/target.png" class="img-fluid" style="width:80%; height:80%;" />
+                    </div>
+                    <div class="col-md-9">
+                        <h4>Our Mission</h4>
+                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top:1%;">
+            <div class="col-md-6 flex-center ">
+                <div class="row p-3 m-1 about wow zoomIn"  style="border:1px solid #808080; border-radius:5px;   ">
+                    <div class="col-md-3" style="display:block; margin:auto;">
+                        <img src="img/correct.png" class="img-fluid" style="width:80%; height:80%;" />
+                    </div>
+                    <div class="col-md-9">
+                        <h4>Our Values</h4>
+                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 flex-center ">
+                <div class="row p-3 m-1 about wow zoomIn" style="border:1px solid #808080; border-radius:5px;   ">
+                    <div class="col-md-3" style="display:block; margin:auto;">
+                        <img src="img/shield (1).png" class="img-fluid" style="width:80%; height:80%;" />
+                    </div>
+                    <div class="col-md-9">
+                        <h4>Our Policies</h4>
+                        <p style="color:black !important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bluee wow zoomIn" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <img src="img/Group 115.png" class="img-fluid" style="width:20%;" />
+                </div>
+            </div>
+            <div class="row" style="margin-top:5%; ">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="margin-bottom:10% !important;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 flex-center ml-5">
+                                    <img src="img/Group 152.png" class="img-fluid" style="width:70%; height:100%;" />
+                                </div>
+                                <div class="col-md-6 mt-5">
+                                    <h4>Smile Digital</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 flex-center ml-5">
+                                    <img src="img/Ellipse 38.png" class="img-fluid" style="width:70%; height:100%;" />
+                                </div>
+                                <div class="col-md-6 mt-5">
+                                    <h4>Smile Di</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 flex-center ml-5">
+                                    <img src="img/Ellipse 37.png" class="img-fluid" style="width:70%; height:100%;" />
+                                </div>
+                                <div class="col-md-6 mt-5">
+                                    <h4>Smile </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev" style="margin-right:10%;">
+                        <span class="" aria-hidden="true"><img src="img/arrow.png" class="img-fluid" style="width:50%; height:50%;" /></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="" aria-hidden="true"><img src="img/NEXT.png" class="img-fluid" style="width:50%; height:50%;" /></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container  " style="margin-top:5%; margin-bottom:5%;">
+        <div class="row">
+            <div class="col-md-12"> <img src="img/Group 125.png" class="img-fluid mb-5" style="width:20%;" /></div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bages mt-5 wow zoomIn" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 circ">
+                   
+                    <div class="row  " style="margin-top:10%; ">
+                        <div class="col-md-12 flex-center  mt-4" st>
+                            <img src="img/work.png" class="img-fluid" />
+                        </div>
+                        <div class="col-md-12 flex-center mt-4">
+                            <h4>Big Title</h4>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8 flex-center mt-4">
+                            <p style="color:black !important; font-size:10px; text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 fform" style="padding:3%; margin-left:5%;">
+
+
+                    <div class="md-form form-lg">
+                        <input type="text" id="inputLGEx" class="form-control form-control-lg">
+                        <label for="inputLGEx">client name</label>
+                    </div>
+
+                    <!--<div class="md-form">
+        <select class="mdb-select md-form">
+            <option value="" disabled selected>country</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>-->
+
+                    <div class="form-group">
+
+                        <select class="form-control" id="exampleFormControlSelect1 " style="padding: 0;
+    font-size: 12px; display: block;
+
+             font-weight: 0;
+             line-height: 0;
+             color: white;
+             background-color: transparent;
+             background-clip: padding-box;
+             border: 1px solid #ced4da;
+             border-radius: 0;
+
+            border: 0;
+            border-bottom: 1px solid;">
+                            <option value="" style=" font-size: 10px !important;" disabled selected>country</option>
+
+                            <option>gaza</option>
+                            <option>rafah</option>
+                            <option>oman</option>
+                            <option>Libya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+
+                        <select class="form-control" id="exampleFormControlSelect1" style="padding: 0;
+    font-size: 12px; display: block;
+
+             font-weight: 0;
+             line-height: 0;
+             color: white;
+             background-color: transparent;
+             background-clip: padding-box;
+             border: 1px solid #ced4da;
+             border-radius: 0;
+
+            border: 0;
+            border-bottom: 1px solid;">
+                            <option value="" disabled selected>phone country code</option>
+
+                            <option>880</option>
+                            <option>166</option>
+
+                        </select>
+                    </div>
+
+
+             
+                    <div class="md-form">
+                        <input type="text" id="inputMDEx" class="form-control">
+                        <label for="inputMDEx">phone number</label>
+                    </div>
+
+
+                    <div class="md-form form-sm">
+                        <input type="text" id="inputSMEx" class="form-control form-control-sm">
+                        <label for="inputSMEx">E-Email</label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="inputSMEx" class="form-control form-control-sm">
+                        <label for="inputSMEx">The Project Name</label>
+                    </div>
+                   
+
+                    <div class="form-group">
+
+                        <select class="form-control" id="exampleFormControlSelect1" style="padding: 0;
+    font-size: 12px; display: block;
+
+             font-weight: 0;
+             line-height: 0;
+             color: white;
+             background-color: transparent;
+             background-clip: padding-box;
+             border: 1px solid #ced4da;
+             border-radius: 0;
+
+            border: 0;
+            border-bottom: 1px solid;">
+                            <option value="" disabled selected>Select Of Project</option>
+
+                            <option>880</option>
+                            <option>166</option>
+
+                        </select>
+                    </div>
+
+                    <div class="md-form form-sm">
+                        <input type="text" id="inputSMEx" class="form-control form-control-sm">
+                        <label for="inputSMEx">Short discription</label>
+                    </div>
+
+                    <form action="/action_page.php">
+
+                        <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="customFile" name="filename">
+              
+
+
+                            <label class="custom-file-label" style="  border: 0;
+            border-bottom: 1px solid; font-size: 12px; padding: 0; padding-top:2px; border-radius: 0;  background-color: transparent; " for="customFile">Please, Attach the Project Business Plan</label>
+                        </div>
+
+
+                    </form>
+
+
+                 
+
+                    <button class="btn btn-default btn-sm send" style="background-color:#FBB03B !important; width:50%; height:10%;">Submit</button>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="container  " style="margin-top:5%; margin-bottom:5%;">
+        <div class="row">
+            <div class="col-md-12"> <img src="img/Group 116.png" class="img-fluid mb-5 mt-5" style="width:20%;" /></div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row flex-center">
+            <div class="col-md-4 ">
+
+
+                <div class="card wow flipInX">
+
+
+
+                    <img class="card-img-top" src="img/alexandre-debieve-FO7JIlwjOtU-unsplash.png" alt="Card image cap" />
+
+                    <div class="card-body">
+
+                        <p style="color:#808080;">Technology</p>
+                        <h4 class="card-title mt-2"><a>Big Title 1</a></h4>
+
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="btn more" style="border:1px solid #FBB03B; border-radius:15px; color:#FBB03B;">Read More</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card wow flipInX">
+
+
+
+                    <img class="card-img-top" src="img/christopher-burns-Kj2SaNHG-hg-unsplash.png" alt="Card image cap" />
+
+                    <div class="card-body">
+
+                        <p style="color:#808080;">Design</p>
+                        <h4 class="card-title mt-2"><a>Big Title 2</a></h4>
+
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <!--<a href="#" class="btn more" style="border:1px solid #FBB03B; border-radius:15px; background-color:#FBB03B; color:white;">Read More</a>-->
+                        <a href="#" class="btn more" style="border:1px solid #FBB03B; border-radius:15px; color:#FBB03B;">Read More</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card wow flipInX">
+
+
+
+                    <img class="card-img-top" src="img/markus-spiske-iar-afB0QQw-unsplash.png" alt="Card image cap" />
+
+                    <div class="card-body">
+
+                        <p style="color:#808080;">Hacker</p>
+                        <h4 class="card-title mt-2"><a>Big Title 3</a></h4>
+
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+
+                        <a href="#" class="btn more" style="border:1px solid #FBB03B; border-radius:15px; color:#FBB03B;">Read More</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container  " style="margin-top:6%; margin-bottom:5%;">
+        <div class="row">
+            <div class="col-md-12"> <img src="img/Group 145.png" class="img-fluid mb-5 mt-5" style="width:20%;" /></div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="owl-carousel owl-theme ">
+            <article class="item wow zoomIn" style="width:100%; margin-bottom:50%; "><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2> </article>
+            <article class="item wow zoomIn" style="width:100%; "><img src="img/Ellipse 38.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:white;">logo</h2></article>
+            <article class="item wow zoomIn" style="width:100%"><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2></article>
+            <article class="item wow zoomIn" style="width:100%"><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2></article>
+            <article class="item wow zoomIn" style="width:100%"><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2></article>
+            <article class="item wow zoomIn" style="width:100%"><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2></article>
+            <article class="item wow zoomIn" style="width:100%"><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2></article>
+            <article class="item wow zoomIn" style="width:100%"><img src="img/Ellipse 37.png" class="img-fluid" style="margin-left:1%;" /> <h2 style="text-align:center;  margin-top:-55%; display:block; color:#808080;">logo</h2></article>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container  " style="margin-top:6%; margin-bottom:1%;">
+        <div class="row">
+            <div class="col-md-12"> <img src="img/Group 120.png" class="img-fluid mb-5 mt-5" style="width:20%;" /></div>
+        </div>
+
+    </div>
+
+
+    <div class="container " style="margin-bottom:5%;">
+        <div class="row ">
+            <div class="col-md-6">
+                <!--<p style="color:black;"></p>-->
+                Name <input class="form-control form-control-lg" type="text" style="font-size:10px; height:50px;" placeholder="Enter Your Name">
+            </div>
+            <div class="col-md-6">
+                <!--<p style="color:black;"> </p>-->
+                Email Address <input class="form-control form-control-lg" style="font-size:10px; height:50px;" type="text" placeholder="Enter Your Email Address">
+            </div>
+            <div class="col-md-12 mt-4">
+                <!--<p style="color:black;"> </p>-->Subject
+                <input class="form-control form-control-lg" type="text" style="font-size:10px; height:50px;" placeholder="Enter Subject">
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="form-group shadow-textarea">
+                    <label for="exampleFormControlTextarea6" style="color:black !important;">Message</label>
+                    <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="6" placeholder="Enter Massege .... "></textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn send" style="background-color:#193F99; width:250px; height:50px;"> Send Massege <i class="far fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5 wow slideInUp" style="margin-right:auto; margin-left:auto; display:block; ">
+
+                    <img src="img/Group 122.png" class="img-fluid" style="" />
+                </div>
+
+
+                <div class="col-md-5 p-5 wow slideInUp" style="margin-right:auto; margin-left:auto; display:block; margin:auto;">
+                    <ul class="list-unstyled mb-0">
+                        <li class="texx">
+                            <i style="color:white;" class="fas fa-map-marker-alt fa-2x mr-3">
+
+                            </i>  EUROMID SOUTH AFRICA (PTY) Ltd
+                            21 Brendon Avenue, Morningside Manor, Sandton
+                            Gauteng, South Africa
+                            <!--<p style="color:white;">San Francisco, CA 94126, USA</p>-->
+                        </li>
+
+                        <li class="texx">
+                            <i style="color:white;" class="fab fa-whatsapp mt-4 fa-2x mr-3"></i>+975555555555
+
+                            <!--<p style="color:white;">+ 01 234 567 89</p>-->
+                        </li>
+
+                        <li class="texx">
+                            <i style="color:white;" class="fas fa-phone mt-4 fa-2x mr-3"></i>08-267538
+
+
+
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 pt-5 wow slideInUp">
+                    <p style="color:white;">Members</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>  Member Name 1</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>  Member Name 5</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p> Member Name 2</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p> Member Name 6</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>  Member Name 3</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p> Member Name 7</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>  Member Name 4</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>  Member Name 8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        //$('.owl-carousel').owlCarousel({
+        //    loop: true,
+        //    margin: 10,
+        //    responsiveClass: true,
+        //    responsive: {
+        //        0: {
+        //            items: 1,
+        //            nav: true
+        //        },
+        //        600: {
+        //            items: 3,
+        //            nav: false
+        //        },
+        //        1000: {
+        //            items: 5,
+        //            nav: true,
+        //            loop: false
+        //        }
+        //    }
+        //});
+
+        $('.owl-carousel').owlCarousel({
+            stagePadding: 50,
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
